@@ -7,7 +7,6 @@ import {
   Button,
   CssBaseline,
   Container,
-  Grid,
   GridList,
   GridListTile,
   Dialog,
@@ -92,7 +91,7 @@ export default function App() {
         <GridList className={classes.gridList} cols={4}>
           {images.map((image, index) => (
             <GridListTile key={index} spacing={1}>
-              <img src={image.toDataURL()} />
+              <img src={image.toDataURL()} alt="" />
             </GridListTile>
           ))}
         </GridList>
@@ -112,7 +111,7 @@ export default function App() {
           <GridList className={classes.gridList} cols={4} spacing={1}>
             {pending.map((image, index) => (
               <GridListTile key={index}>
-                <img src={image} />
+                <img src={image} alt="" />
               </GridListTile>
             ))}
           </GridList>
